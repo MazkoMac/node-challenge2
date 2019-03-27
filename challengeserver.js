@@ -3,6 +3,8 @@ const geocode = require('./gmaps');
 const hbs = require('hbs')
 const fs = require('fs')
 
+const port = process.env.PORT || 8080;
+
 const rate = geocode.getCurrensy().then((result) => {
     console.log(result)
     return geocode.getExchange()
