@@ -30,11 +30,11 @@ hbs.registerHelper('message', (text) => {
 //     return geocode.getExchange("CAD").then()
 // })
 
-app.use((request, response, next) => {
-    var time = new Date().toString();
-    response.render('maintenance.hbs');
+// app.use((request, response, next) => {
+//     var time = new Date().toString();
+//     response.render('maintenance.hbs');
 
-});
+// });
 
 app.get('/', (request, response) => {
     response.render('main.hbs', {
